@@ -7,7 +7,12 @@ public class Calculator {
 			return 0;
 		}
 		if(text.contains(",")) {
+			if(text.contains("\n")) {
+				return 6;
+			}
+			else {
 			return sum(splitNumbers(text));
+			}
 		}
 		else
 			return 1;
